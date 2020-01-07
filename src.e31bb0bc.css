@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono:400,700&display=swap");
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  line-height: 1.5rem;
+}
+
+.container {
+  height: 100%;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-weight: 800;
+  display: inline-block;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: #eeeeee;
+  border-radius: 0.25rem;
+  background-color: #4ecca3;
+}
+.btn:hover {
+  color: #e1e1e1;
+  background-color: #3ac699;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  height: calc(100% - 2rem);
+  min-height: 325px;
+  margin-bottom: 120px;
+  padding: 1rem;
+  color: #eeeeee;
+  background-color: #232931;
+  justify-content: center;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: top left;
+  background: inherit;
+  transform: skewY(4deg);
+  top: 0;
+}
+@media (min-width: 1716px) {
+  .hero::after {
+    transform: skewY(2deg);
+  }
+}
+@media (min-width: 400px) {
+  .hero {
+    height: calc(100% - 4rem);
+    min-height: 425px;
+    padding: 2rem;
+  }
+}
+@media (min-width: 600px) {
+  .hero {
+    height: calc(100% - 4rem);
+    min-height: 300px;
+    padding: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  .hero {
+    height: calc(100% - 8rem);
+    min-height: 325px;
+    padding: 4rem;
+  }
+}
+.hero__title {
+  width: 100%;
+}
+.hero__heading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0.5rem 0 2rem;
+  letter-spacing: 0.025em;
+  text-shadow: rgba(255, 255, 255, 0.15) 0 5px 35px;
+}
+@media (min-width: 400px) {
+  .hero__heading {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 600px) {
+  .hero__heading {
+    font-size: 4.5rem;
+  }
+}
+.hero__subheader {
+  font-size: 1rem;
+  line-height: 1.625;
+  letter-spacing: -0.003em;
+  color: #d5d5d5;
+}
+@media (min-width: 400px) {
+  .hero__subheader {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 600px) {
+  .hero__subheader {
+    font-size: 1.875rem;
+  }
+}
+
+.resume {
+  position: relative;
+  padding: 2rem;
+  color: #232931;
+  background-color: #eeeeee;
+}
+@media (min-width: 400px) {
+  .resume {
+    padding: 2rem;
+  }
+}
+@media (min-width: 600px) {
+  .resume {
+    padding: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  .resume {
+    padding: 4rem;
+  }
+}
+.resume::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: top left;
+  background: inherit;
+  transform: skewY(4deg);
+  top: -120px;
+}
+@media (min-width: 1716px) {
+  .resume::before {
+    transform: skewY(2deg);
+  }
+}
+.resume a {
+  color: #4ecca3;
+}
+.resume a:visited {
+  color: #3ac699;
+}
+.resume h1 {
+  font-family: "Roboto Mono", monospace;
+  color: #393e46;
+}
+.resume h2 {
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  text-align: center;
+  color: #393e46;
+}
+.resume h2::before, .resume h2::after {
+  position: absolute;
+  top: calc(50% - 0.1rem);
+  width: 27%;
+  content: "";
+  border-top: 0.2rem solid;
+}
+.resume h2::before {
+  left: 0;
+}
+.resume h2::after {
+  right: 0;
+}
+@media (max-width: 400px) {
+  .resume h2::before, .resume h2::after {
+    width: 25%;
+  }
+}
+.resume hr {
+  height: 0.05rem;
+  border: none;
+  border-bottom: 0.05rem solid #393e46;
+}
+.resume em {
+  color: #393e46;
+}
+.resume strong {
+  font-family: "Roboto Mono", monospace;
+  color: #393e46;
+}
+.resume ul {
+  padding-left: 1.2rem;
+}
+.resume table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: left;
+}
+.resume table thead {
+  display: none;
+}
+.resume table td {
+  padding: 0.6rem 0;
+  border-bottom: 0.05rem solid #393e46;
+}
+@media (max-width: 400px) {
+  .resume table td {
+    display: block;
+  }
+  .resume table td:nth-child(1) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
